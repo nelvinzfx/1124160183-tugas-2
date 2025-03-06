@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Gambar HTML</title>
+  </head>
+  <body style="font-family: 'Helvetica', Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: 0 auto; padding: 20px; color: #333;">
+    <h1 style="color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 0.3em;">Panduan Menggunakan Gambar dalam HTML</h1>
+    <h3 style="color: #2c3e50; margin-top: 1.5em; background-color: #f8f9fa; padding: 10px; border-left: 4px solid #3498db;">1. Memasang Gambar pada Halaman</h3>
+    <img src="assets/rick.jpg" alt="Gambar untuk cetak" style="width: 250px; display: block; margin-bottom: 1em;">
+    <h3 style="color: #2c3e50; margin-top: 1.5em; background-color: #f8f9fa; padding: 10px; border-left: 4px solid #3498db;">2. Format Gambar yang Didukung</h3>
+    <ul style="padding-left: 20px;">
+      <li style="margin-bottom: 8px;">APNG - Animated Portable Network Graphics</li>
+      <li style="margin-bottom: 8px;">ICO - Microsoft Icon (.ico, .cur)</li>
+      <li style="margin-bottom: 8px;">JPEG - Untuk foto dan gambar kompleks</li>
+      <li style="margin-bottom: 8px;">PNG - Untuk transparansi dan kualitas tinggi</li>
+      <li style="margin-bottom: 8px;">GIF - Untuk animasi sederhana</li>
+      <li style="margin-bottom: 8px;">SVG - Untuk grafis vektor</li>
+      <li style="margin-bottom: 8px;">WebP - Format modern dengan kompresi baik</li>
+    </ul>
+    <h3 style="color: #2c3e50; margin-top: 1.5em; background-color: #f8f9fa; padding: 10px; border-left: 4px solid #3498db;">3. Mengambil File dari Harddisk</h3>
+    <img src="assets/morty.jpeg" alt="Gambar dari Harddisk" style="width: 250px; display: block; margin-bottom: 1em;">
+    <h3 style="color: #2c3e50; margin-top: 1.5em; background-color: #f8f9fa; padding: 10px; border-left: 4px solid #3498db;">4. Insert Image ke Dokumen Paragraf</h3>
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+      <img src="assets/morty.jpeg" alt="Ilustrasi" style="vertical-align: middle; width: 250px; margin-right: 20px;">
+      <p style="flex: 1;">Teks mengelilingi gambar yang ditempatkan di dalam paragraf. Gunakan properti CSS float untuk mengatur tata letak.</p>
+    </div>
+    <h3 style="color: #2c3e50; margin-top: 1.5em; background-color: #f8f9fa; padding: 10px; border-left: 4px solid #3498db;">5. Image Map</h3>
+    <img src="assets/map.jpg" usemap="#image-map" alt="Peta Indonesia" style="display: block; margin-bottom: 1em;" width="420">
+    <map name="image-map">
+      <area target="_blank" alt="Jambi" title="Jambi" href="https://maps.app.goo.gl/Pm8QS6xrFyoBp3LaA" coords="137,206,95,176" shape="rect">
+      <area target="_blank" alt="Kalimantan Utara" title="Kalimantan Utara" href="https://maps.app.goo.gl/9WNRBW5UXHAntmVa9" coords="337,136,280,100" shape="rect">
+      <area target="_blank" alt="Aceh" title="Aceh" href="https://maps.app.goo.gl/SL9a7h4u1iaPm4GU8" coords="42,125,0,80" shape="rect">
+      <area target="_blank" alt="Bali" title="Bali" href="https://maps.app.goo.gl/jVuNeaQApGjYSfwS8" coords="307,298,288,284" shape="rect">
+      <area target="_blank" alt="Jakarta" title="Jakarta" href="https://maps.app.goo.gl/U6Wjpkc9qNvaVCc39" coords="200,283,166,253" shape="rect">
+    </map>
+    <h3 style="color: #2c3e50; margin-top: 1.5em; background-color: #f8f9fa; padding: 10px; border-left: 4px solid #3498db;">6. Membuat link pada gambar</h3>
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP3jssAHE2kFRYS6h2MtkT0mwstGNhnUhzzlunebkbe7XMr83tElIQRSw&s=10" target="_blank" style="display: inline-block;">
+      <img src="assets/blank_morty.jpeg" alt="Blank Morty" style="width: 300px; display: block; margin-bottom: 1em;">
+    </a>
+    <h3 style="color: #2c3e50; margin-top: 1.5em; background-color: #f8f9fa; padding: 10px; border-left: 4px solid #3498db;">7. Gambar sebagai link</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP3jssAHE2kFRYS6h2MtkT0mwstGNhnUhzzlunebkbe7XMr83tElIQRSw&s=10" alt="Antonov" style="width: 350px; display: block; margin-bottom: 1em;">
+    <h3 style="color: #2c3e50; margin-top: 1.5em; background-color: #f8f9fa; padding: 10px; border-left: 4px solid #3498db;">8. Auto thumbnail</h3>
+    <a target="_blank" href="assets/morty_dk.png" style="display: inline-block; transition: transform 0.3s ease;">
+      <img src="assets/morty_dk.png" alt="Morty Don't Know" style="width: 250px; display: block; margin-bottom: 1em;">
+    </a>
+    <h3 style="color: #2c3e50; margin-top: 1.5em; background-color: #f8f9fa; padding: 10px; border-left: 4px solid #3498db;">9. Dengan style</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+      <img src="assets/morty_dk.png" alt="Morty dengan gaya border solid" style="border: 3px solid; width: 300px;">
+      <img src="assets/morty_dk.png" alt="Morty dengan gaya border radius" style="border-radius: 5px; width: 300px;">
+      <img src="assets/morty_dk.png" alt="Morty dengan gaya border radius persentase" style="border-radius: 10%; width: 200px;">
+    </div>
+    <h3 style="color: #2c3e50; margin-top: 1.5em; background-color: #f8f9fa; padding: 10px; border-left: 4px solid #3498db;">10. Gambar dengan berbagai bentuk</h3>
+    <ul style="padding-left: 20px;">
+      <li style="margin-bottom: 8px;">Lingkaran</li>
+      <img src="assets/morty_avatar.jpeg" alt="Morty dengan bentuk lingkaran" style="border-radius: 50%; width: 250px; border: 5px solid #3498db; display: block; margin-bottom: 1em;">
+      <li style="margin-bottom: 8px;">Rounded</li>
+      <img src="assets/morty_avatar.jpeg" alt="Morty dengan sudut membulat" style="border-radius: 10%; width: 250px; border: 3px solid #2ecc71; display: block; margin-bottom: 1em;">
+      <li style="margin-bottom: 8px;">Belah ketupat</li>
+      <div style="position: relative; width: 260px; height: 260px; margin-bottom: 1em;">
+        <!-- Elemen border (lebih besar) -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #3498db; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);"></div>
+        <!-- Gambar (lebih kecil) -->
+        <img src="assets/morty_avatar.jpeg" alt="Morty dengan bentuk belah ketupat" style="position: absolute; top: 5px; left: 5px; width: 250px; height: 250px; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);">
+      </div>
+    </ul>
+  </body>
+</html>
